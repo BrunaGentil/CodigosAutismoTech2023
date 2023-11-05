@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusive TEA</title>
+    <link rel="icon" href="logoInclusiveTea.png">
+    <link rel="stylesheet" href="cssFormularioInclusiveTea.css">
+</head>
+
+<body>
+
+    <div class="bloco">
+        <form method="get" action="">
+            <fieldset>
+                <legend><b>Seu Cadastro</b></legend>
+                <!-- <p>Por favor coloque seus dados corretamente.</p> -->
+                <br>
+                <div class="inputBloco">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Ex.: Ana" id="nome"  onchange="validateInputs()" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBloco">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" placeholder= "Ex.: Silva" id="sobrenome" onchange="validateInputs()" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBloco">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder= "Ex.:ana.silva@inclusiveTea.com.br" id="email" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBloco">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder= "Ex.:91989895454" id="telefone"  onchange="validateInputs()" class="inputUser" required>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" id="enviar" disabled="true">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    
+    </div>
+
+     <script src="interacaoFormularioInclusiveTea.js"></script>
+</body>
+</html>

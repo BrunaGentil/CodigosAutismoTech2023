@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusive TEA</title>
+    <link rel="icon" href="logoInclusiveTea.png">
+    <link rel="stylesheet" href="cssLoginInclusiveTea.css">
+</head>
+
+<body>
+
+    <div class="bloco">
+        <form method="get" action="">
+            <fieldset>
+                <legend><b>Entrar</b></legend>
+                <!-- <p>Por favor coloque seus dados corretamente.</p> -->
+                <br>
+                <div class="inputBloco">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Ex.: ana.silva@inclusiveTea.com.br" id="email"  onchange="validateInputs()" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputBloco">
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" placeholder= "Ex.: Silva123" id="senha" onchange="validateInputs()" class="inputUser" required>
+                </div>
+                <br>
+                <!--mudar para um ckecbox Lembrar-me-->
+                <br>
+                <div>
+                    <input type="checkbox" id="lembrar" name="lembrar" checked/>
+                    <label for="lembrar">Lembrar-me da senha</label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" id="enviar" disabled="true">Acessar</button>
+                </div>
+                <br>
+                <!--fazer 2 links, um de Esqueci minha senha e outro de Efetuar cadastro-->
+                <div>
+                    <a href="/login/">Esqueci minha senha</a>
+                </div>
+                <br>
+                <div>
+                    <p>Ainda não tem cadastro?<br />
+                        <a href="/login/">Crie um agora mesmo</a>
+                    </p>
+                </div>
+                <br>
+                <div>
+
+                </div>
+            </fieldset>
+        </form>
+    
+    </div>
+
+     <script src="interacaoLoginInclusiveTea.js"></script>
+</body>
+</html>

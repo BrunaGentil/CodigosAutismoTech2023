@@ -1,0 +1,6 @@
+body {
+    font-family: "Courier New", "Lucida Console", monospace;
+    background-image: linear-gradient(to right,rgb(166, 181, 168), rgb(201, 214, 176), rgb(228, 221, 154), rgb(149, 143, 145), rgb(182, 184, 207) );
+    color:lightgray;
+
+}
